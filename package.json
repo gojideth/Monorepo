@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@storybook/addon-docs": "^6.4.20",
     "@storybook/preset-create-react-app": "^4.1.0",
