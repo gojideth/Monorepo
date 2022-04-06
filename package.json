@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@storybook/addon-docs": "^6.4.20",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/react": "^6.4.20",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "jest-haste-map": "^27.5.1",
+    "jest-resolve": "^27.5.1",
+    "jest-styled-components": "^7.0.8",
+    "lerna": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-test-renderer": "^18.0.0",
+    "styled-components": "^5.3.5"
+  },
+  "scripts": {
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
+    "dev": "start-storybook -p 5555",
+    "coverage": "jest --coverage",
+    "unit": "jest",
+    "bootstrap": "lerna bootstrap --use-workspaces"
+  }
+}
